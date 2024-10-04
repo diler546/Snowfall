@@ -18,7 +18,7 @@ namespace Snowfall
             InitializeComponent();
 
             // Настройка таймера
-            timer.Interval = 30; // Чем меньше значение, тем плавнее анимация
+            timer.Interval = 30;
             timer.Tick += Timer_Tick;
             timer.Start();
 
@@ -36,7 +36,7 @@ namespace Snowfall
         {
             foreach (var snowflake in snowflakes)
             {
-                snowflake.Y += snowflake.Speed; // Снежинка падает
+                snowflake.Y += snowflake.Speed;
 
                 // Если снежинка достигла низа формы, она появляется снова сверху
                 if (snowflake.Y > Height)
